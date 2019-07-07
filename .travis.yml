@@ -1,0 +1,15 @@
+sudo: true
+language: cpp
+
+compiler:
+  - gcc
+
+before_script:
+  - mkdir build
+  - cd build
+  - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  - sudo make install
+
+script:
+  - g++ example.cpp -o example -lclibars
+  - ./example
