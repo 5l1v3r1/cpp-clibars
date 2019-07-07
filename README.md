@@ -86,57 +86,249 @@ int main()
 ### Constructing the object
 
 - **`CLIBars(std::string label, int length, float total, char fill, char empty, char lborder, char rborder)`**
-  |Parameter|Default|Description|
-  |:-----:|:-----:|:-----|
-  |label|`nil`|Sets the label of the progress bar|
-  |length|`nil`|Sets the ength of progress bar|
-  |total|`nil`|Sets the total length of the input|
-  |fill|`nil`|Sets the fill character|
-  |empty|`nil`|Sets the empty character|
-  |lborder|`nil`|Sets the left border character|
-  |rborder|`nil`|Sets the right border character|
+
+    <table>
+  <thead>
+  <tr>
+  <th align="center">Parameter</th>
+  <th align="center">Default</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td align="center">label</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the label of the progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">length</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the ength of progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">total</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the total length of the input</td>
+  </tr>
+  <tr>
+  <td align="center">fill</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the fill character</td>
+  </tr>
+  <tr>
+  <td align="center">empty</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the empty character</td>
+  </tr>
+  <tr>
+  <td align="center">lborder</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the left border character</td>
+  </tr>
+  <tr>
+  <td align="center">rborder</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the right border character</td>
+  </tr>
+  </tbody>
+  </table>
 
 * **`CLIBars(int length, float total, char fill, char empty, char lborder, char rborder)`**
-  |Parameter|Default|Description|
-  |:-----:|:-----:|:-----|
-  |label|_empty string_|Sets the label of the progress bar|
-  |length|`nil`|Sets the ength of progress bar|
-  |total|`nil`|Sets the total length of the input|
-  |fill|`nil`|Sets the fill character|
-  |empty|`nil`|Sets the empty character|
-  |lborder|`nil`|Sets the left border character|
-  |rborder|`nil`|Sets the right border character|
+
+    <table>
+  <thead>
+  <tr>
+  <th align="center">Parameter</th>
+  <th align="center">Default</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td align="center">label</td>
+  <td align="center"><em>empty string</em></td>
+  <td align="left">Sets the label of the progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">length</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the ength of progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">total</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the total length of the input</td>
+  </tr>
+  <tr>
+  <td align="center">fill</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the fill character</td>
+  </tr>
+  <tr>
+  <td align="center">empty</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the empty character</td>
+  </tr>
+  <tr>
+  <td align="center">lborder</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the left border character</td>
+  </tr>
+  <tr>
+  <td align="center">rborder</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the right border character</td>
+  </tr>
+  </tbody>
+  </table>
+
 * **`CLIBars(int length, float total, char fill, char empty)`**
-  |Parameter|Default|Description|
-  |:-----:|:-----:|:-----|
-  |label|_empty string_|Sets the label of the progress bar|
-  |length|`nil`|Sets the ength of progress bar|
-  |total|`nil`|Sets the total length of the input|
-  |fill|`nil`|Sets the fill character|
-  |empty|`nil`|Sets the empty character|
-  |lborder|_empty character_|Sets the left border character|
-  |rborder|_empty character_|Sets the right border character|
+
+    <table>
+  <thead>
+  <tr>
+  <th align="center">Parameter</th>
+  <th align="center">Default</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td align="center">label</td>
+  <td align="center"><em>empty string</em></td>
+  <td align="left">Sets the label of the progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">length</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the ength of progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">total</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the total length of the input</td>
+  </tr>
+  <tr>
+  <td align="center">fill</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the fill character</td>
+  </tr>
+  <tr>
+  <td align="center">empty</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the empty character</td>
+  </tr>
+  <tr>
+  <td align="center">lborder</td>
+  <td align="center"><em>empty character</em></td>
+  <td align="left">Sets the left border character</td>
+  </tr>
+  <tr>
+  <td align="center">rborder</td>
+  <td align="center"><em>empty character</em></td>
+  <td align="left">Sets the right border character</td>
+  </tr>
+  </tbody>
+  </table>
+
 * **`CLIBars(int length, float total, char fill)`**
-  |Parameter|Default|Description|
-  |:-----:|:-----:|:-----|
-  |label|_empty string_|Sets the label of the progress bar|
-  |length|`nil`|Sets the ength of progress bar|
-  |total|`nil`|Sets the total length of the input|
-  |fill|`nil`|Sets the fill character|
-  |empty|_white space_ (`' '`)|Sets the empty character|
-  |lborder|_null character_ (`'\0'`)|Sets the left border character|
-  |rborder|_null character_ (`'\0'`)|Sets the right border character|
+
+    <table>
+  <thead>
+  <tr>
+  <th align="center">Parameter</th>
+  <th align="center">Default</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td align="center">label</td>
+  <td align="center"><em>empty string</em></td>
+  <td align="left">Sets the label of the progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">length</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the ength of progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">total</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the total length of the input</td>
+  </tr>
+  <tr>
+  <td align="center">fill</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the fill character</td>
+  </tr>
+  <tr>
+  <td align="center">empty</td>
+  <td align="center"><em>white space</em> (<code>' '</code>)</td>
+  <td align="left">Sets the empty character</td>
+  </tr>
+  <tr>
+  <td align="center">lborder</td>
+  <td align="center"><em>null character</em> (<code>'\0'</code>)</td>
+  <td align="left">Sets the left border character</td>
+  </tr>
+  <tr>
+  <td align="center">rborder</td>
+  <td align="center"><em>null character</em> (<code>'\0'</code>)</td>
+  <td align="left">Sets the right border character</td>
+  </tr>
+  </tbody>
+  </table>
 
 * **`CLIBars(int length, float total)`**
-  |Parameter|Default|Description|
-  |:-----:|:-----:|:-----|
-  |label|_empty string_|Sets the label of the progress bar|
-  |length|`nil`|Sets the ength of progress bar|
-  |total|`nil`|Sets the total length of the input|
-  |fill|_pound sign_ (`'#'`)|Sets the fill character|
-  |empty|_white space_ (`' '`)|Sets the empty character|
-  |lborder|_null character_ (`'\0'`)|Sets the left border character|
-  |rborder|_null character_ (`'\0'`)|Sets the right border character|
+
+    <table>
+  <thead>
+  <tr>
+  <th align="center">Parameter</th>
+  <th align="center">Default</th>
+  <th align="left">Description</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td align="center">label</td>
+  <td align="center"><em>empty string</em></td>
+  <td align="left">Sets the label of the progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">length</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the ength of progress bar</td>
+  </tr>
+  <tr>
+  <td align="center">total</td>
+  <td align="center"><code>nil</code></td>
+  <td align="left">Sets the total length of the input</td>
+  </tr>
+  <tr>
+  <td align="center">fill</td>
+  <td align="center"><em>pound sign</em> (<code>'#'</code>)</td>
+  <td align="left">Sets the fill character</td>
+  </tr>
+  <tr>
+  <td align="center">empty</td>
+  <td align="center"><em>white space</em> (<code>' '</code>)</td>
+  <td align="left">Sets the empty character</td>
+  </tr>
+  <tr>
+  <td align="center">lborder</td>
+  <td align="center"><em>null character</em> (<code>'\0'</code>)</td>
+  <td align="left">Sets the left border character</td>
+  </tr>
+  <tr>
+  <td align="center">rborder</td>
+  <td align="center"><em>null character</em> (<code>'\0'</code>)</td>
+  <td align="left">Sets the right border character</td>
+  </tr>
+  </tbody>
+  </table>
 
 ### Hide / Show Percentage
 
