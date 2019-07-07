@@ -2,11 +2,12 @@
 
 > A customizable bars on console
 
-**CLIBars** is a easy to use and customizable library
+**CLIBars** is a easy to use and customizable library to show elegant ascii progress bars on the terminal. For more details see the [api](#api)
 
 ## Requirements
 
 - CMake 3.9+
+- gcc 8+
 
 ## Setup
 
