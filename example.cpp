@@ -12,7 +12,7 @@
  * running
  * $ ./example
  */
-#include "../includes/clibars.hpp"
+#include <clibars.hpp>
 #include <unistd.h>
 
 int main()
