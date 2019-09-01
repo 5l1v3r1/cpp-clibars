@@ -73,7 +73,7 @@ int main()
         // writing the
         bar->progress(i);
 
-        // giving the sleep od 200ms
+        // giving the sleep of 200ms
         usleep(200000);
     }
 
